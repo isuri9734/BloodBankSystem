@@ -3,6 +3,11 @@ body {
     background-color: black;
     
   }
+
+h1{
+  text-align: center;
+}
+
   
   * {
     box-sizing: border-box;
@@ -14,7 +19,7 @@ body {
     background-color: rgb(223, 163, 163);
     width: 30%;
     height: 90%;
-   margin: 40px 500px ;
+   margin: 50px 500px ;
    
    
   }
@@ -22,17 +27,23 @@ body {
   /* Full-width input fields */
   input[type=text], input[type=password] {
     width:100%;
-    padding: 15px;
-    margin: 5px 0 22px 0;
+    padding: 13px;
+    margin: 4px 0 22px 0;
     display: inline-block;
     border: none;
     background: #f1f1f1;
+    
   }
   
   input[type=text]:focus, input[type=password]:focus {
     background-color: #ddd;
     outline: none;
   }
+
+  td
+{
+    padding:0 15px;
+}
   
 
   /* Set a style for the submit button */
@@ -46,6 +57,7 @@ body {
     width:50%;
     opacity: 0.9;
     border-radius: 6px;
+   
   }
 
   .resetbtn {
@@ -55,7 +67,7 @@ body {
     margin: 8px 0;
     border: none;
     cursor: pointer;
-    width:60%;
+    width:70%;
     opacity: 0.9;
     border-radius: 6px;
   }
