@@ -21,9 +21,9 @@
                 <div class="column" style="background-color:rgb(192, 183, 183);">
                   <h2>Adminstrator Login</h2>
                   <img src="images\admin.png">
-                  
+                
                   <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
-
+                
                   <div id="id01" class="modal">
                     
                     <form class="modal-content animate" action="/action_page.php" method="post">
@@ -39,24 +39,22 @@
                         <label for="psw"><b>Password</b></label>
                         <input type="password" placeholder="Enter Password" name="psw" required>
                           
-                        <button type="submit" >Login</button>
+                        <input type="submit" value="LOGIN" name="login">
                         <br>
                         <label>
-                          <input type="checkbox" checked="checked" name="remember"> Remember me
+                          <input type="checkbox" checked=" checked" name="remember"> Remember me
                         </label>
                       </div>
                   
                       <div class="container" style="background-color:#f1f1f1">
-                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-                        <span class="psw">Forgot <a href="#">password?</a></span>
+                        <input type="reset" value="CANCEL" name="cancel">
+                        <span class="fpsw"> <a href="#">Forgot password?</a></span>
                       </div>
                     </form>
                   </div>
                   <script type="text/javascript" src="javascript\login.js"></script>
- 
-                  
-
                 </div>
+
                 <div class="column" style="background-color:rgb(185, 174, 174);">
                   <h2>Donor Login</h2>
                   <img src="images\donor.png">
@@ -83,8 +81,7 @@
                         <label for="psw"><b>Password</b></label>
                         <input type="password" placeholder="Enter Password" name="psw" required>
                           
-                        <button type="submit" >Login</button>
-
+                        <input type="submit" value="LOGIN" name="login">
                         <br>
                         <label>
                           <input type="checkbox" checked="checked" name="remember"> Remember me
@@ -92,8 +89,8 @@
                       </div>
                   
                       <div class="container" style="background-color:#f1f1f1">
-                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-                        <span class="psw">Forgot <a href="#">password?</a></span>
+                        <input type="reset" value="CANCEL" name="cancel">
+                        <span class="fpsw"><a href="#">Forgot password?</a></span>
                       </div>
                     </form>
                   </div>

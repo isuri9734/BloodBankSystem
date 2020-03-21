@@ -88,6 +88,7 @@ input[type=text], input[type=password] {
   display: inline-block;
   border: 1px solid #ccc;
   box-sizing: border-box;
+ 
 }
 
 /* Set a style for all buttons */
@@ -99,18 +100,49 @@ button {
   border: none;
   cursor: pointer;
   width: 40%;
-  
+  border-radius: 6px;
 }
+  
+
 
 button:hover {
   opacity: 0.8;
 }
 
-/* Extra styles for the cancel button */
-.cancelbtn {
+input[type=submit]:hover{
+  opacity: 0.8;
+
+}
+
+input[type=reset]:hover{
+  opacity: 0.8;
+
+}
+
+input[type=submit]
+{
+  background-color: rgb(228, 22, 22);
+  color: white;
+  padding: 12px 18px;
+  margin: 6px 0;
+  border: none;
+  cursor: pointer;
+  width: 20%;
+  text-align: center;
+  border-radius: 4px;
+  
+}
+
+/* styles for the cancel button */
+input[type=reset] {
   width: auto;
-  padding: 8px 16px;
+  padding: 12px 18px;
   background-color: #803934;
+  margin: 6px 0;
+  border: none;
+  cursor: pointer;
+  color: white;
+  border-radius: 4px;
 }
 
 /* Center the image and position the close button */
@@ -129,7 +161,7 @@ img.avatar {
   padding: 14px;
 }
 
-span.psw {
+span.fpsw {
   float: right;
   padding-top: 14px;
 }
@@ -191,15 +223,14 @@ span.psw {
 
 /* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 300px) {
-  span.psw {
+  span.fpsw {
      display: block;
      float: none;
   }
-  .cancelbtn {
-     width: 80%;
-  }
+ 
 }
 
 p{
     text-align: center;
 }
+
