@@ -34,6 +34,7 @@ ul {
 
    body{
        background-color: black;
+       
    }
 
   
@@ -48,6 +49,8 @@ ul {
     border-radius: 10px;
     padding: 10px;
     height: 500px; /* Should be removed. Only for demonstration */
+    
+  
   }
 
   
@@ -92,15 +95,38 @@ input[type=text], input[type=password] {
 }
 
 /* Set a style for all buttons */
-button {
-  background-color: rgb(228, 22, 22);
+.btn-lg {
+  background-color: rgb(22, 228, 166);
   color: white;
   padding: 12px 18px;
-  margin: 6px 0;
+  /*margin: 6px 0;*/
   border: none;
   cursor: pointer;
   width: 40%;
   border-radius: 6px;
+
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
+  margin-top:3%;
+  margin-bottom:0%
+}
+
+.bt-lg {
+  background-color: rgb(22, 228, 166);
+  color: white;
+  padding: 12px 18px;
+  /*margin: 6px 0;*/
+  border: none;
+  cursor: pointer;
+  width: 40%;
+  border-radius: 6px;
+
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
+  margin-top:3%;
+  margin-bottom:0%
 }
   
 
@@ -124,12 +150,18 @@ input[type=submit]
   background-color: rgb(228, 22, 22);
   color: white;
   padding: 12px 18px;
-  margin: 6px 0;
+  /*margin: 6px 0;*/
   border: none;
   cursor: pointer;
   width: 20%;
   text-align: center;
   border-radius: 4px;
+
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
+  margin-top:4%;
+  margin-bottom:0%
   
 }
 
@@ -232,5 +264,6 @@ span.fpsw {
 
 p{
     text-align: center;
+    line-height: 1.6;
 }
 
