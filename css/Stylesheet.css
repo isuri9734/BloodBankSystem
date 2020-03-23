@@ -1,9 +1,15 @@
+body{
+  background-color: black;
+}
+
 ul {
   list-style-type: none;
-  margin: 0;
+  margin-left: 120px;
   padding: 0;
   overflow: hidden;
-  background-color: rgba(241, 102, 102, 0.842);
+  background-color: rgb(248, 7, 7);
+  
+  height: 10%;
 }
 
 li {
@@ -12,14 +18,15 @@ li {
 
 li a {
   display: block;
-  color: rgb(10, 10, 10);
+  color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 28px 28px;
   text-decoration: none;
+
 }
 
 li a:hover {
-  background-color:rgb(204, 197, 204);
+  background-color:rgb(34, 29, 34);
 }
 
 body {
@@ -33,6 +40,11 @@ box-sizing: border-box;
 
 img {
 vertical-align: middle;
+display: block;
+margin-left: auto;
+margin-right: auto;
+  
+
 }
 
 /* Position the image container (needed to position the left and right arrows) */
@@ -55,9 +67,9 @@ cursor: pointer;
 .next {
 cursor: pointer;
 position: absolute;
-top: 40%;
+top: 60%;
 width: auto;
-padding: 16px;
+padding: 10px;
 margin-top: -50px;
 color: rgb(10, 10, 10);
 font-weight: bold;
@@ -65,6 +77,8 @@ font-size: 20px;
 border-radius: 0 3px 3px 0;
 user-select: none;
 -webkit-user-select: none;
+margin-left: 320px;
+margin-right: 320px;
 }
 
 /* Position the "next button" to the right */
@@ -86,7 +100,7 @@ background-color: rgba(0, 0, 0, 0.8);
  left: 0;
  bottom: 0;
  width: 100%;
- background-color: rgb(161, 78, 78);
+ background-color: rgb(212, 6, 6);
  color: white;
  text-align: center;
 }
