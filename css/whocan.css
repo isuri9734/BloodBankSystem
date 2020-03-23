@@ -26,23 +26,24 @@ ul.b {
   }
 
   ul.a{
-      list-style-type: circle;
+      list-style-type: square;
     }
 
- .content{
-        max-width: 700px;
-        margin: auto;
-        background: white;
-        padding: 10px;
-        line-height: 1.5;
-    
-     }
+    .content{
+      max-width: 700px;
+      margin: auto;
+      background: white;
+      padding: 10px;
+      line-height: 1.5;
+      font-family: Roboto,sans-serif;
+  
+   }
 
      h1{
-        font-family: Roboto,sans-serif;
-        font-style: normal;
-        font-weight: 300;
-        margin: 0 0 7.5px;
-       
-     }
-    
+      font-family: Roboto,sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      margin: 0 0 7.5px;
+     
+   }
+  

@@ -87,27 +87,7 @@ right: 0;
 border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
-/*.prev:hover,
-.next:hover {
-background-color: rgba(0, 0, 0, 0.8);
-}*/
 
-
-
-/*.footer {
-  position: fixed;
- left: 0;
- bottom: 0;
- width: 100%;
- background-color: red;
- color: white;
- text-align: center;
- height: 5%;
- margin-bottom: 2px;
- 
- 
-}*/
 .footer{
   color: black;
   text-align: center;
@@ -127,4 +107,11 @@ h1{
   max-width: 1300px;
   margin: auto;
   padding: 10px;
+}
+
+input[type=button]{
+  text-align: right;
+  background-color: white;
+  color: red;
+  vertical-align: normal;
 }
