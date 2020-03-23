@@ -1,5 +1,5 @@
 body{
-  background-color: black;
+  background-color: white;
 }
 
 ul {
@@ -26,7 +26,7 @@ li a {
 }
 
 li a:hover {
-  background-color:rgb(34, 29, 34);
+  background-color:rgb(126, 125, 126);
 }
 
 body {
@@ -77,8 +77,8 @@ font-size: 20px;
 border-radius: 0 3px 3px 0;
 user-select: none;
 -webkit-user-select: none;
-margin-left: 320px;
-margin-right: 320px;
+margin-left: 80px;
+margin-right: 80px;
 }
 
 /* Position the "next button" to the right */
@@ -96,11 +96,20 @@ background-color: rgba(0, 0, 0, 0.8);
 
 
 .footer {
- position: fixed;
+  position: fixed;
  left: 0;
  bottom: 0;
  width: 100%;
- background-color: rgb(212, 6, 6);
+ background-color: red;
  color: white;
  text-align: center;
+ height: 5%;
+ margin-bottom: 2px;
+ 
+ 
+}
+
+.para{
+  color: black;
+  text-align: justify;
 }
