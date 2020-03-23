@@ -1,5 +1,8 @@
 body{
   background-color: white;
+  font-family: Arial;
+  margin: 2px
+  ;
 }
 
 ul {
@@ -29,10 +32,7 @@ li a:hover {
   background-color:rgb(126, 125, 126);
 }
 
-body {
-font-family: Arial;
-margin: 0;
-}
+
 
 * {
 box-sizing: border-box;
@@ -95,7 +95,7 @@ background-color: rgba(0, 0, 0, 0.8);
 
 
 
-.footer {
+/*.footer {
   position: fixed;
  left: 0;
  bottom: 0;
@@ -107,9 +107,24 @@ background-color: rgba(0, 0, 0, 0.8);
  margin-bottom: 2px;
  
  
+}*/
+.footer{
+  color: black;
+  text-align: center;
+ 
+  padding: 3px;
+
+}
+
+h1{
+  color: red;
 }
 
 .para{
-  color: black;
+  color: rgb(155, 17, 17);
   text-align: justify;
+  padding: 6px;
+  max-width: 1300px;
+  margin: auto;
+  padding: 10px;
 }
