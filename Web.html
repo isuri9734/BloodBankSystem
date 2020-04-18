@@ -1,69 +1,123 @@
 <html>
-    <head>
-        <title>
-         Blood Bank System   
-        </title>
-        <link rel="stylesheet" type="text/css" href="css\stylesheet.css">
-    </head>
+
+<head>
+  <title>
+    Blood Bank-Home
+  </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
 
 <Body>
-    <ul>
-      
-        <li><img src=""></li>
-        <li><a class="active" href="Web.html">Home</a></li>
-        <li><a href="Login.html">Login Page</a></li>
-        <li><a href="Whocan.html">Who can give blood</a></li>
-        <li><a href="Whyblood.html">Why give blood</a></li>
-        <li><a href="DonationP.html">Donation Process</a></li>
-       
+  <!-- Navbar start -->
+  <nav class="navbar navbar-expand-md bg-danger navbar-dark fixed-top">
+    <a class="navbar-brand" href="Web.html">BloodBank</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse  navbar-md justify-content-end" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="Web.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Login.html">Login</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Whocan.html">Who can donate blood</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Whyblood.html">Why donate blood</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="DonationP.html">Donation Process</a>
+      </li>
+    </ul>
+    </div>
+  </nav>
+  <!-- Navbar end -->
+
+<div class="section">
+  <div class="container-fluid">
+<div class="row">
+  <div class="col-sm-12 mt-5 p-3">
+  <!-- carousel start -->
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+      <!-- carousel Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
       </ul>
 
+      <!-- carousel slideshow -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images\img1.jpg" class="d-block w-100" alt="">
+        </div>
+        <div class="carousel-item">
+          <img src="images\img3.jpg" class="d-block w-100" alt="">
+        </div>
+        <div class="carousel-item">
+          <img src="images\img2.jpg" class="d-block w-100" alt="" >
+        </div>
+        <div class="carousel-item">
+          <img src="images\img4.jpg" class="d-block w-100" alt="" >
+          <!-- style="width:95%; height: 100%;" -->
+        </div>
+      </div>
 
-<div class="container">
-  <div class="mySlides">
-    <!--div class="numbertext">1 / 4</div-->
-    <img src="images\img1.jpg" style="width:95%; height: 60%;">
+      <!-- carousel Left and right controls -->
+      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+
+    </div>
   </div>
-
-  <div class="mySlides">
-    <!--div class="numbertext">2 / 4</div-->
-    <img src="images\img3.jpg" style="width:95%; height: 60%;">
   </div>
-
-  <div class="mySlides">
-    <!--div class="numbertext">3 / 6</div-->
-    <img src="images\img2.jpg" style="width:95%"; height="60%">
-  </div>
-    
-  <div class="mySlides">
-    <!--div class="numbertext">4 / 6</div-->
-    <img src="images\img4.jpg" style="width:95%"; height="60%">
-  </div>
-
-  <a class="prev" onclick="plusSlides(-1)">❮</a>
-  <a class="next" onclick="plusSlides(1)">❯</a>
-
-  <script type="text/javascript" src="javascript\js.js"></script>
-
+  <!-- carousel end -->
 </div>
 
-<div class="para">
-  <p>
+  <div class="container mx-auto" style="margin-top: 5%; margin-bottom: 5%;">
+    <div class="card">
+      <div class="card-body ">
+        <h2>Who we are</h2>
+        <p class="justify-content">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+          galley of type and scrambled it to make a type specimen book.
+          It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
+          unchanged.
+          It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+          recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+      </div> 
+    </div>
     
-<h1>Who we are</h1>
-
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
-It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-<br>
-  </p>
+  </div>
 </div>
-
-            <div class="footer">
-              <p>All right reserved. copyright@2020</p>
-            </div>
-            
-      
+  <!-- footer -->
+<footer class="text-muted text-center">
+  <div class="container">
+    <p>All right reserved. copyright@2020</p>
+  </div>
+</footer>
+  
 </Body>
+
 </html>
