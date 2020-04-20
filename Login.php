@@ -94,6 +94,7 @@
     
 
     <!-- Admin Modal -->
+    <?php include 'alogin.php';?>
     <div class="modal fade" id="adminModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
       aria-hidden="true">
       <div class="modal-dialog" role="document">
@@ -107,7 +108,8 @@
           <div class="modal-body">
             <!-- admin form -->
             <div class="container">
-              <form action="/action_page.php" method="post">
+              <form action="Login.php " method="post">
+              <?php include 'alogin.php';?>
                 <div class="form-group">
                   <img src="images\avatar.png" alt="Avatar" class="img-responsive">
                 </div>
@@ -149,18 +151,18 @@
           <div class="modal-body">
             <!-- Donor form -->
             <div class="container">
-              <form action="/action_page2.php" method="post">
+              <form action=" " method="post">
                 <div class="form-group">
                   <img src="images\avatar.png" alt="Avatar" class="img-responsive">
                 </div>
                 <div class="form-group">
                   <label for="Username">Username</label>
-                  <input type="text" class="form-control" id="Username2" name="uname" aria-describedby="username"
+                  <input type="text" class="form-control" id="Username2" name="username" aria-describedby="username"
                     placeholder="Enter username" required>
                 </div>
                 <div class="form-group">
                   <label for="InputPassword1">Password</label>
-                  <input type="password" class="form-control" id="InputPassword2" name="psw" placeholder="Password"
+                  <input type="password" class="form-control" id="InputPassword2" name="passw" placeholder="Password"
                     required>
                 </div>
                 <div class="form-check">
