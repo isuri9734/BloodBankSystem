@@ -4,95 +4,87 @@
             Registration Form
         </title>
 
-        <link rel="stylesheet" type="text/css" href="css\regstylesheet.css">
-    </head>
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!------ Include the above in your HEAD tag ---------->
 
-<body>
-    <form action="">
-        <div class="container">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+        <style
+        >
+        </style>
 
-          <h1>Register Form</h1>
+</head>
 
-          <table align="center">         
-            <tr>
-                <td>
-                    Name
-                </td>
+<div class="container">
+<br><br><br><br>
+<div class="card bg-light">
+<article class="card-body mx-auto" style="max-width: 400px;">
+	<h4 class="card-title mt-3 text-center">Create Account</h4>
+	
+	<form>
+	<div class="form-group input-group">
+		<div class="input-group-prepend">
+		    <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+		 </div>
+        <input name="" class="form-control" placeholder="Full name" type="text">
+    </div> <!-- form-group// -->
 
-                <td>
-                    <input type="text" placeholder="Enter Name" name="name" required>
-                </td>
-            </tr>
+    <div class="form-group input-group">
+    	<div class="input-group-prepend">
+		    <span class="input-group-text"> <i class="fa fa-tint"></i> </span>
+         </div>
+    
+        <input name="" class="form-control" placeholder="Blood Group" type="test">
+    </div> <!-- form-group// -->
 
-            <tr>
-                <td>
-                    Blood Group
-                </td>
+    <div class="form-group input-group">
+    	<div class="input-group-prepend">
+		    <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+         </div>
+    
+        <input name="" class="form-control" placeholder="Email address" type="email">
+    </div> <!-- form-group// -->
 
-                <td>
-                    <input type="text" placeholder="Enter Blood group" name="blg" required>
-                </td>
-            </tr>
+    <div class="form-group input-group">
+    	<div class="input-group-prepend">
+		    <span class="input-group-text"> <i class="fa fa-phone"></i> </span>
+		</div>
+    	<input name="" class="form-control" placeholder="Contact number" type="text">
+    </div> <!-- form-group// -->
+    
+    <div class="form-group input-group">
+    	<div class="input-group-prepend">
+		    <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+		</div>
+        <input class="form-control" placeholder="Create password" type="password">
+    </div> <!-- form-group// -->
 
-            <tr>
-                <td>
-                    Contact Number
-                </td>
+    <div class="form-group input-group">
+    	<div class="input-group-prepend">
+		    <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+		</div>
+        <input class="form-control" placeholder="Repeat password" type="password">
+    </div> <!-- form-group// --> 
 
-                <td>
-                    <input type="text" placeholder="Enter Contact number" name="tel" required>
-                </td>
-            </tr>
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary btn-block"> Create Account  </button>
+    </div> <!-- form-group// -->
 
-            <tr>
-                <td>
-                    Email
-                </td>
+    <p class="text-center">Have an account? <a href="Login.php">Log In</a> </p>                                                                 
+</form>
+</article>
+</div> <!-- card.// -->
 
-                <td>
-                    <input type="text" placeholder="Enter Email" name="email" required>
-                </td>
-            </tr>
+</div> 
 
-            <tr>
-                <td>
-                    Password
-                </td>
+<!-- footer -->
+    
+<div class="container text-center">
+        <footer class="text-muted text-center p-4">
+        <p>All right reserved. copyright@2020</p>
+    </footer>
 
-                <td>
-                    <input type="password" placeholder="Enter Password" name="psw" required>
-                </td>
-            </tr>
-
-            <tr>
-                <td>
-                    Confirm Password
-                </td>
-
-                <td>
-                    <input type="password" placeholder="Repeat Password" name="cpsw" required>
-                </td>
-            </tr>
-            <!--tr>
-                <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
-            </tr-->
-
-            <tr>
-                <td>
-                    <button  type="reset" class="resetbtn">Cancel</button>
-                </td>
-
-                <td>
-                    <button type="submit" class="registerbtn">Register</button>
-                </td>
-                
-            </tr>
-          
-      
-          
-        
-    </table>
-      </form>
       
 </body>
 </html>

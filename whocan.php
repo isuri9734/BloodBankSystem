@@ -1,5 +1,4 @@
 <html>
-
 <head>
     <title>Who can give blood</title>
     <meta charset="utf-8">

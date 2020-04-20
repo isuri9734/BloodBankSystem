@@ -1,5 +1,4 @@
 <html>
-
 <head>
   <title>
     Blood Bank-Home
@@ -19,7 +18,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
 <style>
-    body, html {
+body, html {
   height: 100%;
   margin: 0;
   font: 400 15px/1.8 "Lato", sans-serif;

@@ -52,7 +52,8 @@
          <p style="text-align: center;">
             Giving blood is simple and it saves lives. When you give blood, it is collected so it can be used to treat someone else.
           </p>
-          <img class="img-fluid" src="images/bldn.png" style="max-width: 100%;">
+          <!--img class="img-fluid" src="images/bldn.png" style="max-width: 100%;"-->
+          <img class="img-fluid mt-2 p-5" src="images/bldn.png">
           <br>
                 <h4 style="text-align: justify;">Before you give blood</h4>
           <p style="text-align: justify;">
