@@ -108,7 +108,7 @@
           <div class="modal-body">
             <!-- admin form -->
             <div class="container">
-              <form action="Login.php " method="post">
+              <form action="dlogin.php " method="post">
               <?php include 'alogin.php';?>
                 <div class="form-group">
                   <img src="images\avatar.png" alt="Avatar" class="img-responsive">
@@ -151,14 +151,15 @@
           <div class="modal-body">
             <!-- Donor form -->
             <div class="container">
-              <form action=" " method="post">
+              <form action="dlogin.php " method="post">
+              <?php include 'dlogin.php';?>
                 <div class="form-group">
                   <img src="images\avatar.png" alt="Avatar" class="img-responsive">
                 </div>
                 <div class="form-group">
-                  <label for="Username">Username</label>
-                  <input type="text" class="form-control" id="Username2" name="username" aria-describedby="username"
-                    placeholder="Enter username" required>
+                  <label for="Email">Email</label>
+                  <input type="text" class="form-control" id="Email" name="email" aria-describedby="email"
+                    placeholder="Enter email" required>
                 </div>
                 <div class="form-group">
                   <label for="InputPassword1">Password</label>
@@ -169,8 +170,9 @@
                   <input type="checkbox" class="form-check-input" id="exampleCheck2">
                   <label class="form-check-label" for="exampleCheck2">Remember me</label>
                 </div>
-                <button type="reset" value="CANCEL" name="cancel" class="btn btn-Danger">Cancel</button>
-                <button type="submit" value="LOGIN" name="login" class="btn btn-primary">Submit</button>
+                <button type="reset" value="CANCEL" name="cancel2" class="btn btn-Danger">Cancel</button>
+                <button type="submit" value="LOGIN" name="login2" class="btn btn-primary">Submit</button>
+                <span><?php echo $error; ?></span>
               </form>
             </div>
           </div>
