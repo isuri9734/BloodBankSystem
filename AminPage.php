@@ -1,3 +1,8 @@
+<?php
+
+include 'dbcon.php';
+?>
+
 <html>
 <head>
     <title>Admin Page</title>
@@ -59,7 +64,7 @@
                         <div class="card-img-top">
                         <h3>Register Donors</h3>
                         <img class="img-fluid mt-2 p-5" src="images\reg.jpg">
-
+                        <div>
                         <a class="btn btn-danger" href="Registration.php" role="button">Link</a>
                             
                     </div>
@@ -77,7 +82,7 @@
                 <div class="col-sm-2"></div>
                 <div class="col-sm-8">
                     <div class="card mt-5 p-5">
-                        <div class="card-img-top">
+                        <div class="card-img-top"></div>
                         <h3>Search Blood Count</h3>
                         
         <!--div class="container h-100"-->
@@ -107,7 +112,7 @@
                 <div class="col-sm-2"></div>
                 <div class="col-sm-8">
                     <div class="card mt-5 p-5">
-                        <div class="card-img-top">
+                        <div class="card-img-top"></div>
                         <h3>Search Donor</h3>
                         
         <!--div class="container h-100"-->
@@ -135,7 +140,7 @@
                 <div class="col-sm-2"></div>
                 <div class="col-sm-8">
                     <div class="card mt-5 p-5">
-                        <div class="card-img-top">
+                        <div class="card-img-top"></div>
                         <h3>Search in near Hospital</h3>
                     
         <!--div class="container h-100"-->

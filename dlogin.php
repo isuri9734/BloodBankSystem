@@ -1,12 +1,11 @@
 <?php
 include "dbcon.php";
 
-
-
-$error=''; // Variable To Store Error Message
+//$error=''; // Variable To Store Error Message
 if (isset($_POST['login2'])) {
+
 if (empty($_POST['email']) || empty($_POST['passw'])) {
-$error = "Username or Password is invalid";
+echo "Username or Password is invalid";
 }
 else
 {
@@ -25,15 +24,30 @@ $password = mysqli_real_escape_string($con,$password);
 // SQL query to fetch information of registerd users and finds user match.
 $query = mysqli_query($con,"select * from donor where password='$password' AND email='$mail'");
 $rows = mysqli_num_rows($query);
+if($rows == 1) {
+    $_SESSION['email']=$mail;// Initializing Session
+    header("location: donor.php"); // Redirecting To Other Page
 
-if ($rows == 1) {
-$_SESSION['login_user']=$mail; // Initializing Session
-header("location: donor.php"); // Redirecting To Other Page
-} else {
-$error = "Username or Password is invalid";
+$row = mysqli_fetch_assoc($query);
+if ($row < 1) {
+    $_SESSION['id']=$id;
+    $_SESSION['name']=$name;
+    $_SESSION['bloodgroup']=$b_group;
+    $_SESSION['email']=$mail;
+    $_SESSION['tele']=$contact;// Initializing Session
+    header("location: donor.php");
+
+//$rows = mysqli_num_rows($query);
+
+ // Redirecting To Other Page
+//header("Location: ../Login.php?Login=empty");
+} 
+}
+else {
+echo "Username or Password is invalid";
 }
 
-mysql_close($con); // Closing Connection
+mysqli_close($con); // Closing Connection
 }
 }
 

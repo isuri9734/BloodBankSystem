@@ -1,3 +1,8 @@
+<?php
+session_start();
+include 'dbcon.php';
+?>
+
 <html>
 <head>
     <title>Donor</title>
@@ -41,6 +46,23 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#delete">Delete Details</a>
                 </li>
+                
+                    <!-- USER NAME php -->
+                    <?php
+                                        if(isset($_SESSION['email']))  {
+                                            //$usrid $_SESSION['id']; 
+                                        // $usrid =$_SESSION['fname'];
+                                        echo'<li class="nav-item">
+                                        <a class="nav-link" href=" ">'."".$_SESSION['email']." | ".'</a> </li>';
+                                        }
+                                        else {
+                                            $usrii = "User Name";
+                                            echo'<li class="nav-item">
+                                            <a class="nav-link" href=" ">'.$usrii.'</a> </li>';
+                                        }
+                                        ?>
+
+                </li>
                 <li class="nav-item">
                     <a class="nav-link" href="Login.php">Logout</a>
                 </li>
@@ -54,7 +76,7 @@
                 <div class="col-sm-2"></div>
                 <div class="col-sm-8">
                     <div class="card mt-5 p-5">
-                        <div class="card-img-top">
+                        <div class="card-img-top"></div>
                         <h3>View Profile</h3>
                         <form action=" " method="GET">
                             <div class="d-flex justify-content-center h-100">
@@ -66,13 +88,13 @@
 gfdgdfg
 
                     </form>     
-                    </div> 
                     </div>
                 </div>
                 <div class="col-sm-2">
                 </div>  
             </div>
         </div>
+        </section>
     
 </body>
 </html>

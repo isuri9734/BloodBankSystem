@@ -1,3 +1,10 @@
+<?php 
+session_start(); 
+?>
+
+<?php include 'alogin.php';?>
+<?php include 'dlogin.php';?>
+
 <html>
 
 <head>
@@ -108,8 +115,8 @@
           <div class="modal-body">
             <!-- admin form -->
             <div class="container">
-              <form action="dlogin.php " method="post">
-              <?php include 'alogin.php';?>
+              <form action="donor.php " method="post">
+              
                 <div class="form-group">
                   <img src="images\avatar.png" alt="Avatar" class="img-responsive">
                 </div>
@@ -152,7 +159,7 @@
             <!-- Donor form -->
             <div class="container">
               <form action="dlogin.php " method="post">
-              <?php include 'dlogin.php';?>
+             
                 <div class="form-group">
                   <img src="images\avatar.png" alt="Avatar" class="img-responsive">
                 </div>
@@ -172,7 +179,7 @@
                 </div>
                 <button type="reset" value="CANCEL" name="cancel2" class="btn btn-Danger">Cancel</button>
                 <button type="submit" value="LOGIN" name="login2" class="btn btn-primary">Submit</button>
-                <span><?php echo $error; ?></span>
+                <!--span><?php echo $error; ?></span-->
               </form>
             </div>
           </div>
