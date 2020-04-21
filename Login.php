@@ -1,5 +1,6 @@
 <?php 
 session_start(); 
+include 'dbcon.php';
 ?>
 
 <?php include 'alogin.php';?>
@@ -101,7 +102,7 @@ session_start();
     
 
     <!-- Admin Modal -->
-    <?php include 'alogin.php';?>
+    
     <div class="modal fade" id="adminModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
       aria-hidden="true">
       <div class="modal-dialog" role="document">
@@ -115,9 +116,8 @@ session_start();
           <div class="modal-body">
             <!-- admin form -->
             <div class="container">
-              <form action="donor.php " method="post">
-              
-                <div class="form-group">
+              <form action="alogin.php " method="post">
+               <div class="form-group">
                   <img src="images\avatar.png" alt="Avatar" class="img-responsive">
                 </div>
                 <div class="form-group">
