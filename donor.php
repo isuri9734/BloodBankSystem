@@ -59,27 +59,18 @@
                         <form action=" " method="GET">
                             <div class="d-flex justify-content-center h-100">
                             <div class="searchbar">
-        
-                            <input class="search_input" type="text" name="search" placeholder="Id to get details...">
-                            <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
-             <table>
-                 <tr>
-                    <th>Id</th>
-                    <th> Name</th>
-                    <th> Blood Group</th>
-                    <th>Email</th>
-                    <th> Conatct No <th>
-                    <th> Password <th>
-                </tr> 
-                </table>
-                </div>
-                </div>
-                </form>        
-                    </div>
-                    </div>
-                </div>
-                <div class="col-sm-2"></div>
+                                <input class="search_input" type="text" name="search" placeholder="Id to get details...">
+                                <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+                         </div>
+                        </div>
+gfdgdfg
 
+                    </form>     
+                    </div> 
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                </div>  
             </div>
         </div>
     
