@@ -1,3 +1,8 @@
+<?php
+session_start();
+
+?>
+
 <html>
     <head>
         <title>Donation Process</title>

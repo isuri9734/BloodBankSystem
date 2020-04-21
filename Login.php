@@ -2,10 +2,6 @@
 session_start(); 
 include 'dbcon.php';
 ?>
-
-<?php include 'alogin.php';?>
-<?php include 'dlogin.php';?>
-
 <html>
 
 <head>
