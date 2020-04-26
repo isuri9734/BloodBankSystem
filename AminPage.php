@@ -47,6 +47,20 @@ session_start();
                 <li class="nav-item">
                     <a class="nav-link" href="#availability">Search blood availability</a>
                 </li>
+                <!-- USER NAME php -->
+                <?php
+                                        if(isset($_SESSION['uname']))  {
+                                            //$usrid $_SESSION['id']; 
+                                        // $usrid =$_SESSION['fname'];
+                                        echo'<li class="nav-item">
+                                        <a class="nav-link" href=" ">'."".$_SESSION['uname']." | ".'</a> </li>';
+                                        }
+                                        else {
+                                            $usrii = "User Name";
+                                            echo'<li class="nav-item">
+                                            <a class="nav-link" href=" ">'.$usrii.'</a> </li>';
+                                        }
+                                        ?>
                 <li class="nav-item">
                     <a class="nav-link" href="Login.php">Logout</a>
                 </li>

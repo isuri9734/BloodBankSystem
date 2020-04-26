@@ -1,6 +1,7 @@
-<?php 
+<?php
+ 
 session_start(); 
-include 'dbcon.php';
+
 ?>
 <html>
 

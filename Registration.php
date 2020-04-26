@@ -38,7 +38,6 @@
 	<h4 class="card-title mt-3 text-center">Create Account</h4>
 	
 	<form action ="Registration.php " method="post">
-    <?php include 'd_reg.php';?>
     <?php 
             // Display Error message
             if(!empty($error_message)){

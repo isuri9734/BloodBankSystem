@@ -26,23 +26,30 @@ $password = mysqli_real_escape_string($con,$password);
 $query = mysqli_query($con,"select * from donor where password='$password' AND email='$mail'");
 $rows = mysqli_num_rows($query);
 if($rows == 1) {
-    $_SESSION['email']=$mail;// Initializing Session
-    header("location: donor.php"); // Redirecting To Other Page
+    $row = mysqli_fetch_assoc($query);
 
-$row = mysqli_fetch_assoc($query);
-if ($row < 1) {
-    $_SESSION['id']=$id;
-    $_SESSION['name']=$name;
-    $_SESSION['bloodgroup']=$b_group;
-    $_SESSION['email']=$mail;
-    $_SESSION['tele']=$contact;// Initializing Session
-    header("location: donor.php");
+    $_SESSION['email']=$mail;// Initializing Session
+    $_SESSION['did']=$row["did"];
+    $_SESSION['name']=$row["Name"];
+    $_SESSION['bloodgroup']=$row["Blood_group"];
+    $_SESSION['tele']=$row["Contact_no"];
+    $_SESSION['psw']=$row["Password"];
+    header("location:donor.php"); // Redirecting To Other Page
+
+// $row = mysqli_fetch_assoc($query);
+// if ($row < 1) {
+//     $_SESSION['did']=$did;
+//     $_SESSION['name']=$name;
+//     $_SESSION['bloodgroup']=$b_group;
+//     $_SESSION['email']=$mail;
+//     $_SESSION['tele']=$contact;// Initializing Session
+//     header("location:donor.php");
 
 //$rows = mysqli_num_rows($query);
 
  // Redirecting To Other Page
 //header("Location: ../Login.php?Login=empty");
-} 
+//} 
 }
 else {
 echo "Username or Password is invalid";

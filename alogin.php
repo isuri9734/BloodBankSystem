@@ -1,27 +1,54 @@
+
 <?php
 session_start();
 include "dbcon.php";
 
-if(isset($_POST['login'])){
+//$error=''; // Variable To Store Error Message
+if (isset($_POST['login'])) {
 
-    $uname = mysqli_real_escape_string($con,$_POST['uname']);
-    $password = mysqli_real_escape_string($con,$_POST['psw']);
+if (empty($_POST['uname']) || empty($_POST['psw'])) {
+echo "Username or Password is invalid";
+}
+else
+{
+// Define $username and $password
+$uname=$_POST['uname'];
+$password=$_POST['psw'];
 
-    if ($uname != "" && $password != ""){
 
-        $sql_query = "select count(*) as password from admin where username='".$uname."' and password='".$password."'";
-        $result = mysqli_query($con,$sql_query);
-        $row = mysqli_fetch_array($result);
+// To protect MySQL injection for Security purpose
+$uname = stripslashes($uname);
+$password = stripslashes($password);
+$uname = mysqli_real_escape_string($con,$uname);
+$password = mysqli_real_escape_string($con,$password);
 
-        $count = $row['password'];
+// SQL query to fetch information of registerd users and finds user match.
+$query = mysqli_query($con,"select * from admin where password='$password' AND username='$uname'");
+$rows = mysqli_num_rows($query);
+if($rows == 1) {
+    $_SESSION['uname']=$uname;// Initializing Session
+    header("location: AminPage.php"); // Redirecting To Other Page
 
-        if($count > 0){
-            $_SESSION['uname'] = $uname;
-            header('Location: AminPage.php');
-        }else{
-            echo "Invalid username and password";
-        }
+$row = mysqli_fetch_assoc($query);
+if ($row < 1) {
+    $_SESSION['aid']=$aid;
+    $_SESSION['name']=$name;
+    $_SESSION['email']=$mail;
+    $_SESSION['tele']=$contact;// Initializing Session
+    header("location: AminPage.php");
 
-    }
+//$rows = mysqli_num_rows($query);
 
-}?>
+ // Redirecting To Other Page
+//header("Location: ../Login.php?Login=empty");
+} 
+}
+else {
+echo "Username or Password is invalid";
+}
+
+mysqli_close($con); // Closing Connection
+}
+}
+
+?>
