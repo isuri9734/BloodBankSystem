@@ -66,7 +66,7 @@
 		<div class="input-group-prepend">
 		    <span class="input-group-text"> <i class="fa fa-user"></i> </span>
 		 </div>
-        <input name="name" class="form-control" placeholder="Full name" type="text">
+        <input name="name" class="form-control" placeholder="Full name" type="text" required>
     </div> <!-- form-group// -->
 
     <div class="form-group input-group">
@@ -74,7 +74,7 @@
 		    <span class="input-group-text"> <i class="fa fa-tint"></i> </span>
          </div>
     
-        <input name="bgroup" class="form-control" placeholder="Blood Group" type="test">
+        <input name="bgroup" class="form-control" placeholder="Blood Group" type="test" required>
     </div> <!-- form-group// -->
 
     <div class="form-group input-group">
@@ -82,28 +82,28 @@
 		    <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
          </div>
     
-        <input name="email" class="form-control" placeholder="Email address" type="email">
+        <input name="email" class="form-control" placeholder="Email address" type="email" required>
     </div> <!-- form-group// -->
 
     <div class="form-group input-group">
     	<div class="input-group-prepend">
 		    <span class="input-group-text"> <i class="fa fa-phone"></i> </span>
 		</div>
-    	<input name="tele" class="form-control" placeholder="Contact number" type="text">
+    	<input name="tele" class="form-control" placeholder="Contact number" type="text"required>
     </div> <!-- form-group// -->
     
     <div class="form-group input-group">
     	<div class="input-group-prepend">
 		    <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
 		</div>
-        <input name="psw" class="form-control" placeholder="Create password" type="password">
+        <input name="psw" class="form-control" placeholder="Create password" type="password" required>
     </div> <!-- form-group// -->
 
     <div class="form-group input-group">
     	<div class="input-group-prepend">
 		    <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
 		</div>
-        <input name="cpsw" class="form-control" placeholder="Repeat password" type="password">
+        <input name="cpsw" class="form-control" placeholder="Repeat password" type="password" required>
     </div> <!-- form-group// --> 
 
     <div class="form-group">

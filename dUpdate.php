@@ -29,18 +29,5 @@ include "dbcon.php";
 
      include "alert.php";
 	 
-	 
-	// //-create  while loop and loop through result set 
-	// while($row=mysqli_fetch_array($result)){
-    //     $did =$row['did'];  
-    //     $name =$row['Name']; 
-    //     $b_group=$row['Blood_group']; 
-    //     $mail=$row['Email']; 
-	//     $Contact=$row['Contact_no']; 
-    //     $psw =$row['Password'];  
-	// // -display  the result of the array 
-    
-    
-    // }
     } 
 ?> 
