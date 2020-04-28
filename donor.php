@@ -1,6 +1,12 @@
+<?php
+session_start();
+include "dbcon.php";
+include "dlogin.php";
+?>
+
 <html>
 <head>
-    <title>Admin Page</title>
+    <title>Donor Page</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -41,12 +47,29 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#delete">Delete Details</a>
                 </li>
+                
+                    <!-- USER NAME php -->
+                    <?php
+                                        if(isset($_SESSION['email']))  {
+                                            //$usrid $_SESSION['id']; 
+                                        // $usrid =$_SESSION['fname'];
+                                        echo'<li class="nav-item">
+                                        <a class="nav-link" href=" ">'."".$_SESSION['email']." | ".'</a> </li>';
+                                        }
+                                        else {
+                                            $usrii = "User Name";
+                                            echo'<li class="nav-item">
+                                            <a class="nav-link" href=" ">'.$usrii.'</a> </li>';
+                                        }
+                                        ?>
+               
                 <li class="nav-item">
                     <a class="nav-link" href="Login.php">Logout</a>
                 </li>
             </ul>
         </div>
     </nav>
+    <!--nav end-->
 
     <section id="view">
         <div class="container text-center">
@@ -54,34 +77,73 @@
                 <div class="col-sm-2"></div>
                 <div class="col-sm-8">
                     <div class="card mt-5 p-5">
-                        <div class="card-img-top">
+                        <div class="card-img-top"></div>
                         <h3>View Profile</h3>
-                        <form action=" " method="GET">
-                            <div class="d-flex justify-content-center h-100">
-                            <div class="searchbar">
-        
-                            <input class="search_input" type="text" name="search" placeholder="Id to get details...">
-                            <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
-             <table>
-                 <tr>
-                    <th>Id</th>
-                    <th> Name</th>
-                    <th> Blood Group</th>
-                    <th>Email</th>
-                    <th> Conatct No <th>
-                    <th> Password <th>
-                </tr> 
-                </table>
-                </div>
-                </div>
-                </form>        
-                    </div>
-                    </div>
-                </div>
-                <div class="col-sm-2"></div>
+                        
+<!-- UPDATE FORM - START-->
 
-            </div>
+
+<article class="card-body mx-auto" style="max-width: 400px;">
+	<h4 class="card-title mt-3 text-center">Update profile</h4>
+	
+	<form action ="dUpdate.php " method="post">
+    <!-- <h5 class="card-title mt-3 text-center">ID :<?php echo $_SESSION['did'];?></h5> -->
+    <input name="id" class="form-control" type="text" value="<?php echo $_SESSION['did'];?> " disabled>
+
+
+	<div class="form-group input-group">
+		<div class="input-group-prepend">
+
+		    <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+		 </div>
+        <input name="name" class="form-control" placeholder="Full name" type="text" value="<?php echo $_SESSION['name'];?> "required>
+    </div> <!-- form-group// -->
+
+    <div class="form-group input-group">
+    	<div class="input-group-prepend">
+		    <span class="input-group-text"> <i class="fa fa-tint"></i> </span>
+         </div>
+    
+        <input name="bgroup" class="form-control" placeholder="Blood Group" type="test" value="<?php echo $_SESSION['bloodgroup'];?> "required>
+    </div> <!-- form-group// -->
+
+    <div class="form-group input-group">
+    	<div class="input-group-prepend">
+		    <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+         </div>
+    
+        <input name="email" class="form-control" placeholder="Email address" type="email" value="<?php echo $_SESSION['email'];?> "required>
+    </div> <!-- form-group// -->
+
+    <div class="form-group input-group">
+    	<div class="input-group-prepend">
+		    <span class="input-group-text"> <i class="fa fa-phone"></i> </span>
+		</div>
+    	<input name="tele" class="form-control" placeholder="Contact number" type="text" value="<?php echo $_SESSION['tele'];?> "required>
+    </div> <!-- form-group// -->
+    
+    <div class="form-group input-group">
+    	<div class="input-group-prepend">
+		    <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+		</div>
+        <input name="psw" class="form-control" placeholder="Create password" type="password" value="<?php echo $_SESSION['psw'];?> "required>
+    </div> <!-- form-group// -->
+
+    <div class="form-group">
+        <button name="submit" type="submit" class="btn btn-primary"> Update Account  </button>
+        <button name="delete" type="submit" class="btn btn-primary"> Delete Account  </button>
+    </div> <!-- form-group// -->                                                             
+</form>
+<!--form update end-->
+</article>     
+     </div>
+          </div>
+             <div class="col-sm-2">
+             </div>  
         </div>
+        </div>
+        </section>
+
     
 </body>
 </html>

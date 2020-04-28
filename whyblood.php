@@ -1,3 +1,8 @@
+<?php
+session_start();
+
+?>
+
 <html>
 
 <head>
@@ -26,21 +31,21 @@
     </button>
     <div class="collapse navbar-collapse  navbar-md justify-content-end" id="collapsibleNavbar">
       <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="index.php">Home</a>
-        </li>
-        <li class="nav-item ">
-          <a class="nav-link" href="Login.php">Login</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="Whocan.php">Who can donate blood</a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="Whyblood.php">Why donate blood</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="DonationP.php">Donation Process</a>
-        </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="index.php">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Whocan.php">Who can donate blood</a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="Whyblood.php">Why donate blood</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="DonationP.php">Donation Process</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Login.php">Login</a>
+      </li>
       </ul>
     </div>
   </nav>
@@ -52,10 +57,10 @@
         <div class="col-sm-8">
           <div class="card mt-5 p-4">
             
-              <h1>Why give blood</h1><br>
+              <h1>Why donate blood</h1><br>
               <p>Giving blood saves lives.
                 The blood you give is a lifeline in an emergency and for people who need long-term treatments.</p>
-              <h3>Why do we need you to give blood?</h3>
+              <h3>Why do we need you to donate blood?</h3>
 
               <p>
                 We need new blood donors from all backgrounds to ensure there is the right blood available for patients
