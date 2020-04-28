@@ -99,16 +99,16 @@ h3 {
         <a class="nav-link" href="index.php">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="Login.php">Who can donate blood</a>
+        <a class="nav-link" href="Whocan.php">Who can donate blood</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="Whocan.php">Why donate blood</a>
+        <a class="nav-link" href="Whyblood.php">Why donate blood</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="Whyblood.php"></a>
+        <a class="nav-link" href="DonationP.php">Donation Process</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="DonationP.php"></a>
+        <a class="nav-link" href="Login.php">Login</a>
       </li>
     </ul>
     </div>

@@ -30,20 +30,20 @@ session_start();
     </button>
     <div class="collapse navbar-collapse  navbar-md justify-content-end" id="collapsibleNavbar">
       <ul class="navbar-nav">
-      <li class="nav-item active">
+      <li class="nav-item ">
         <a class="nav-link" href="index.php">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="Login.php">Who can donate blood</a>
+        <a class="nav-link" href="Whocan.php">Who can donate blood</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="Whocan.php">Why donate blood</a>
+        <a class="nav-link" href="Whyblood.php">Why donate blood</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="DonationP.php">Donation Process</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="Whyblood.php">Donation Process</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="DonationP.php">Login</a>
+        <a class="nav-link" href="Login.php">Login</a>
       </li>
       </ul>
     </div>

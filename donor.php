@@ -130,26 +130,17 @@ include "dlogin.php";
     </div> <!-- form-group// -->
 
     <div class="form-group">
-        <button name="submit" type="submit" class="btn btn-primary btn-block"> Update Account  </button>
+        <button name="submit" type="submit" class="btn btn-primary"> Update Account  </button>
+        <button name="delete" type="submit" class="btn btn-primary"> Delete Account  </button>
     </div> <!-- form-group// -->                                                             
 </form>
-</article>
-<!-- UPDATE FORM - END -->
-                            <!-- <div class="d-flex justify-content-center h-100">
-                            <div class="searchbar">
-                                <input class="search_input" type="text" name="did" placeholder="Id to get details...">
-                                <a href="#" class="search_icon" name="search"><i class="fas fa-search"  name="search"></i></a>
-                         </div>
-                        </div> -->
-
-<!-- <input type="text" name="did" placeholder="Id to Search"><br><br>
- <input type="submit" name="search" value="Filter"><br><br> -->
-                         
-                    </div>
-                </div>
-                <div class="col-sm-2">
-                </div>  
-            </div>
+<!--form update end-->
+</article>     
+     </div>
+          </div>
+             <div class="col-sm-2">
+             </div>  
+        </div>
         </div>
         </section>
 

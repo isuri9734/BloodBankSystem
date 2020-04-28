@@ -30,4 +30,26 @@ include "dbcon.php";
      include "alert.php";
 	 
     } 
+
+    if(isset($_POST['delete'])){ 
+
+        $id = $_SESSION['did'];
+
+        // Attempt delete query execution
+        $sql = "DELETE FROM donor WHERE did='$id'";
+
+        if(mysqli_query($con, $sql)){
+            echo "Records were deleted successfully.";
+            header("location:Login.php");
+        } else{
+            echo "ERROR: Could not able to execute $sql. " . mysqli_error($con);
+        }
+        
+        // Close connection
+        mysqli_close($link);
+
+
+    
+    }
+
 ?> 

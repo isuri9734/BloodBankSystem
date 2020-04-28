@@ -103,7 +103,7 @@ include 'dbcon.php'
 
           <input class="form-control my-2 my-sm-0" type="search" name="group" placeholder="Enter Blood group to search" aria-label="Search" >
          <br> <button type="submit" name="search" class="btn btn-outline-danger my-2 my-sm-0">Search</button>
-         <button type="submit" name="bcClear" class="btn btn-outline-danger my-2 my-sm-0">clear</button> <br>
+         <button type="submit" name="bcClear" class="btn btn-outline-secondary my-2 my-sm-0">clear</button> <br>
          
 <?php
 
@@ -115,7 +115,8 @@ include 'dbcon.php'
                 //filter null values
                 if($group==null || $group==""){
                     
-                    echo 'enter a blood group';
+                    // echo 'Enter a blood group';
+                    echo '<script>alert("Enter a blood group to get count")</script>'; 
          
                 }else {
                     //-update query
@@ -132,7 +133,7 @@ include 'dbcon.php'
                             echo $bloodcount;
                             echo '</h5>';
                     } else{
-                        echo "No records matching your query were found.";
+                        echo "No records matching .";
                     }
                 }
 
@@ -173,7 +174,7 @@ include 'dbcon.php'
 
          <input class="form-control my-2 my-sm-0" type="search" name="grp" placeholder="Enter Blood group to search donor" aria-label="Search">
          <br> <button type="submit" name="search2" class="btn btn-outline-danger my-2 my-sm-0">Search</button> 
-         <button type="submit" name="sdClear" class="btn btn-outline-danger my-2 my-sm-0">clear</button> <br>
+         <button type="submit" name="sdClear" class="btn btn-outline-secondary my-2 my-sm-0">clear</button> <br>
 
          <?php
             if(isset($_GET['search2']))
@@ -182,7 +183,8 @@ include 'dbcon.php'
                 //check for null values 
                 if($group2==null || $group2==""){
                     
-                    echo 'enter a blood group';
+                    // echo 'enter a blood group';
+                    echo '<script>alert("Enter a blood group to search donor")</script>'; 
          
                 }
                 else{
@@ -210,10 +212,9 @@ include 'dbcon.php'
                                echo "</tr>";
                            }
                            echo "</table>";
-                           // Free result set
-                           mysqli_free_result($result);
+        
                        } else{
-                           echo "No records matching your query were found.";
+                           echo "No records matching";
                        }
                    }
                 }
@@ -277,10 +278,9 @@ include 'dbcon.php'
                     echo "</tr>";
                 }
                 echo "</table>";
-                // Free result set
-                mysqli_free_result($result);
+                
             } else{
-                echo "No records matching your query were found.";
+                echo "No records matching ";
             }
         }
             }
