@@ -52,7 +52,9 @@ if($rows == 1) {
 //} 
 }
 else {
-echo "Username or Password is invalid";
+    // echo "Username or Password invalid";
+echo '<script>alert("Username or Password is invalid")</script>';
+// header("location:login.php");
 }
 
 mysqli_close($con); // Closing Connection

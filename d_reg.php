@@ -1,6 +1,6 @@
 <?php 
 Include('dbcon.php');
-//$error_message = "";$success_message = "";
+// $error_message = "";$success_message = "";
 
 // Register user
 if(isset($_POST['submit'])){
